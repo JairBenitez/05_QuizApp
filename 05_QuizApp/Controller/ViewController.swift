@@ -24,11 +24,14 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPress(_ sender: UIButton) {
         
+        let factory = QuestionFactory()
+        let question =  factory.getRandomQuiestion()
+        print( question.questionText )
         
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
-        return UIStatusBarStyle.default
+        return UIStatusBarStyle.lightContent
     }
 
 }
