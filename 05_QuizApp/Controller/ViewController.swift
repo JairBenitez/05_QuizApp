@@ -26,13 +26,21 @@ class ViewController: UIViewController {
         
         let factory = QuestionFactory()
         let question =  factory.getRandomQuiestion()
-        print( question.questionText )
+        labelQuestion.text = question.question
+        print( question)
         
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle{
+    
+    // Cambia estilo de la barra de estado po código
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        
         return UIStatusBarStyle.lightContent
+        
     }
+    
+    
 
 }
 

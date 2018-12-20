@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>questions</key>
+	<array>
+		<dict>
+			<key>question</key>
+			<string>El vaticano tiene la cantidad suficiente para acanar con la pobreza mundial</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>El caballito de mar es tan fiel a su pareja que cuando su pareja muere el muere al poco tiempo</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Los humanos son los unicos que practican sexo por placer</string>
+			<key>answare</key>
+			<false/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>La semilla de la manzana contiene sianuro y es tóxica</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Se puede afeitar el bigote de un gato sin ningún problema</string>
+			<key>answare</key>
+			<false/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Un koala necesita beber agua al menos una vez al dia</string>
+			<key>answare</key>
+			<false/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Edison, el inventor de la bombilla tenia miedo a la oscuridad</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Los escorpiones son el unico animal que se suicida cunado no pueden escapar de una situación de peligro</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Los ojos de un hamster se pueden caer si se cuelga de cabeza</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Si divides el número de abejas hembra entre abejas macho se obtiene le número de oro</string>
+			<key>answare</key>
+			<false/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>question</key>
+			<string>Cervantes y shakespeare murieron el mismo dia</string>
+			<key>answare</key>
+			<true/>
+			<key>explanation</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>
