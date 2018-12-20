@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     func gameOver() {
         
-        let alert = UIAlertController(title: "Terminado", message: "has acertado \( correctQuestionsAnswer )", preferredStyle: UIAlertController.Style.alert )
+        let alert = UIAlertController(title: NSLocalizedString("game.over.title", comment: "Título de popup"), message: "has acertado \( correctQuestionsAnswer )", preferredStyle: UIAlertController.Style.alert )
         let okAction = UIAlertAction(title: "Empezar de nuevo", style: .default) { (_) in
             self.startGame()
         }

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  05_QuizApp
+
+  Created by Jair Benítez on 20/12/18.
+  Copyright © 2018 Jair Benítez. All rights reserved.
+*/
+
+
+"game.over.title" = "Ha finalizado la partida";
