@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.factory.questionsBank.questions.shuffle()
+        startGame()
         askNextQuestion()
         
     }
@@ -36,9 +37,14 @@ class ViewController: UIViewController {
         currentScore = 0
         currentQuestionId = 0
         correctQuestionsAnswer = 0
+        
+        updateUIElements()
+        
     }
     
+    
     func askNextQuestion() {
+         updateUIElements()
         if let newQuestion = factory.getQuestionAt(index: currentQuestionId) {
             self.currentQuestion = newQuestion
             labelQuestion.text = self.currentQuestion.question
@@ -47,6 +53,7 @@ class ViewController: UIViewController {
             gameOver()
         }
     }
+    
     
     func gameOver() {
         
@@ -59,11 +66,24 @@ class ViewController: UIViewController {
         present( alert, animated: true, completion: nil )
     }
     
+    func updateUIElements() {
+        
+        self.labelScore.text = "Puntuación: \( currentScore )"
+        self.labelQuestionNumber.text = "\( currentQuestionId) / \( factory.questionsBank.questions.count )"
+        
+        
+        for constraint in self.progressBar.constraints {
+            if constraint.identifier == "barWidth"{
+                constraint.constant = ( CGFloat(self.view.frame.size.width) / CGFloat(factory.questionsBank.questions.count ) ) * CGFloat( currentQuestionId )
+            }
+        }
+        
+    }
     
     @IBAction func buttonPress(_ sender: UIButton) {
         
         var isCorrect : Bool
-        var title = "Has fallado"
+       
         if sender.tag == 1 {
             isCorrect = ( self.currentQuestion.answare == true )
         }else{
@@ -71,17 +91,26 @@ class ViewController: UIViewController {
         }
         
         if isCorrect {
-            title = "Respuesta correcta"
+           
             self.correctQuestionsAnswer += 1
+            self.currentScore += 100
+           
+        
+        
+            
+        } else {
+            title = "Has fallado"
+            let alert = UIAlertController(title: title, message: "explicación pendiente", preferredStyle: UIAlertController.Style.alert )
+            let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
+                
+            }
+            
+            alert.addAction( okAction )
+            present( alert, animated: true, completion: nil )
         }
         
-        let alert = UIAlertController(title: title, message: "explicación pendiente", preferredStyle: UIAlertController.Style.alert )
-        let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
-            self.askNextQuestion()
-        }
+        self.askNextQuestion()
         
-        alert.addAction( okAction )
-        present( alert, animated: true, completion: nil )
     }
     
     

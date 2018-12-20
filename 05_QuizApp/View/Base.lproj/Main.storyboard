@@ -95,11 +95,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IM-jx-pBZ" userLabel="ProgressView">
-                                <rect key="frame" x="0.0" y="748" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="773" width="40" height="15"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="SwB-2K-b8U"/>
-                                    <constraint firstAttribute="height" constant="40" id="sYU-Ns-7GC"/>
+                                    <constraint firstAttribute="width" constant="40" identifier="barWidth" id="SwB-2K-b8U"/>
+                                    <constraint firstAttribute="height" constant="15" id="sYU-Ns-7GC"/>
                                 </constraints>
                             </view>
                         </subviews>
